@@ -4,18 +4,9 @@ import { useState } from 'react'
 import useStyles from './styles'
 import PlaceDetails from '../placeDetails/PlaceDetails'
 
-const places = [
-  {name:'Cool Place'},
-  {name:'Best Beer'},
-  {name:'Best Steak'},
-  {name:'Best Steak'},
-  {name:'Best Steak'},
-  {name:'Best Steak'},
-  {name:'Best Steak'},
-  {name:'Best Steak'},
-];
 
-const List = () => {
+
+const List = ({places}) => {
 
   const [type,setType] = useState('restaurants');
   const [rating,setRating] = useState('');
@@ -45,7 +36,7 @@ const List = () => {
       </FormControl>
 
       <Grid container spacing={3} className={classes.list}>
-            {places.map((place,i)=>(
+            {places?.map((place,i)=>(
               <>
                 <Grid item key={i} xs={12}>
                     <PlaceDetails place={place} />
