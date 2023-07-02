@@ -32,7 +32,7 @@ const App = () => {
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(({ coords: { latitude, longitude } }) => {
       setCoordinates({ lat: latitude, lng: longitude });
-    })
+    });
   }, [])
 
   useEffect(() => {
@@ -51,7 +51,7 @@ const App = () => {
           setIsLoading(false);
         })
     }
-  }, [type, coordinates, bounds])
+  }, [type, bounds])
 
   return (
     <>
