@@ -39,7 +39,7 @@ const App = () => {
   useEffect(() => {
     const filteredPlaces = places.filter((places) => places.rating > rating);
     setFilteredPlaces(filteredPlaces);
-  }, [rating]);
+  }, [places,rating]);
 
   useEffect(() => {
     if (bounds.sw && bounds.ne) {
