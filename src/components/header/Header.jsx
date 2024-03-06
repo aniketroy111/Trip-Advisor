@@ -21,7 +21,7 @@ const Header = ({setCoordinates}) => {
         <Toolbar className={classes.toolbar}>
             <Typography className={classes.title} variant='h5'>Trip Advisor</Typography>
             <Box style={{display:'flex'}}>
-                <Typography variant="h6" className={classes.title} >Explore new places</Typography>
+                <Typography variant="h6" className={classes.title} >Search your place</Typography>
                 <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>

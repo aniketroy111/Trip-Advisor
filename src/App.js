@@ -25,6 +25,7 @@ const App = () => {
   const [type, setType] = useState('restaurants');
   const [rating, setRating] = useState('');
 
+  // hello i am aniket kumar
 
 
 
